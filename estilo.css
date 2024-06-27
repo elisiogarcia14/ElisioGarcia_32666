@@ -1,0 +1,237 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.user-actions img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.qr-code img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.app-links img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.verse-of-the-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.verse-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.verse-text {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.verse-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.verse-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.verse-text button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reading-plans {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.reading-plans h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.plan {
+    text-align: center;
+}
+
+.plan img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plan h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.plan p {
+    font-size: 16px;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+/* Responsividade */
+@media (max-width: 780px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .user-actions {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .intro, .verse-of-the-day, .reading-plans {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .verse-of-the-day {
+        flex-direction: column;
+    }
+
+    .verse-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+}
