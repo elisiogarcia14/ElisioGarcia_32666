@@ -3,74 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouVersion</title>
+    <title>SuaVersao</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagens/pt.webp" type="image/x-icon">
 </head>
 <body>
+   
     <header>
         <nav>
-            <div class="logo">YouVersion</div>
+            <div class="logo">SuaVersao</div>
             <ul class="nav-links">
-                <li><a href="#">Bíblia</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Vídeos</a></li>
+                <li><a href="Links/Versiculos.html" target="_blank"><strong>Versículos</strong></a></li>
+                <li><a href="Links/Frases.html" target="_blank"><strong>Frases</strong></a></li>
             </ul>
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar em Bible.com">
-                <button><img src="search-icon.png" alt="search"></button>
+                <button><img src="imagens/procurar.png" alt="search"></button>
             </div>
             <div class="user-actions">
-                <a href="#">Baixe o Aplicativo</a>
-                <img src="globe-icon.png" alt="language">
-                <img src="menu-icon.png" alt="menu">
-                <img src="user-icon.png" alt="user">
+                <a href="https://play.google.com/store/apps/details?id=br.biblia&hl=pt" id="Bible" target="_blank"><strong>Baixe o Aplicativo</strong></a>
+                <a href="Links/Ens.html" target="_blank"><img src="imagens/ensino-criativo.png" alt="Ensinamentos"></a>
+                <a href= "Links/imagem.html" target="_blank"><img src="imagens/imagens.png" alt="Imagens"></a>
+                <a href="Links/Conta.html" target="_blank" ><img src="imagens/senha-de-login.png" alt="Login"></a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="intro">
-            <h1>Obtenha uma Bíblia gratuita para seu celular e tablet.</h1>
-            <p>On-line ou off-line – O App da Bíblia está disponível a qualquer momento. Sem anúncios. Sem compras.</p>
-            <div class="qr-code">
-                <img src="imagens/qr-home.webp" alt="QR Code">
-            </div>
-            <div class="app-links">
-                <a href="#"><img src="google-play.png" alt="Google Play"></a>
-                <a href="#"><img src="app-store.png" alt="App Store"></a>
-            </div>
-        </section>
+    <section class="bible-download-section">
+        <h1>Obtenha uma Bíblia gratuita para seu celular e tablet.</h1>
+        <p>On-line ou off-line – O App da Bíblia está <br>disponível a qualquer momento. Sem anúncios.<br> Sem compras.</p>
+        <div class="qr-code-container">
+            <img src="imagens/qr-home.webp" alt="QR Code para baixar a Bíblia Sagrada">
+        </div>
+        <p>Escanear para Instalar o Aplicativo</p>
+        <div class="store-links">
+            <a href="https://play.google.com/store/games?device=windows&pli=1" target="_blank">
+                <img src="imagens/play-store-badge.webp" alt="Disponível no Google Play">
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="imagens/app-store-badge.webp" alt="Disponível na App Store">
+            </a>
+        </div>
+    </section>
 
-        <section class="verse-of-the-day">
-            <div class="verse-image">
-                <img src="verse-image.png" alt="Versículo do Dia">
+    <section class="content-section">
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="imagens/read-stroke.webp" alt="Ícone 1">
             </div>
-            <div class="verse-text">
-                <h2>Versículo do Dia</h2>
-                <p>Estejam alertas e fiquem vigiando porque o inimigo de vocês, o Diabo, anda por aí como um leão que ruge, procurando alguém para devorar. <strong>1 Pedro 5:8 (NTLH)</strong></p>
-                <button>Inscrever-se</button>
+            <h5>USE EM QUALQUER LUGAR</h5>
+            <p>Escolha entre mais de 2400 versões da Bíblia<br> em mais de 1600 idiomas em seu<br> computador, telefone ou tablet, com várias<br> versões em áudio disponíveis.</p>
+            <a href="https://pt.wikipedia.org/wiki/Vers%C3%B5es_da_B%C3%ADblia" target="_blank">Ver as versões da Bíblia</a>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="imagens/highlight-stroke.png" alt="Ícone 2">
             </div>
-        </section>
+            <h5>FAÇA DELA A SUA BÍBLIA</h5>
+            <p>Destaque ou adicione Marcadores aos seus<br> versículos favoritos, faça Imagens do Versículo para<br> compartilhar e adicione Anotações públicas ou<br> privadas às passagens da Bíblia.</p>
+            <a href="Links/Conta.html" target="_blank">Crie sua conta gratuita</a>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="imagens/smartphone-stroke.webp" alt="Ícone 3">
+            </div>
+            <h5>INSTALE O APLICATIVO <br> AGORA</h5>
+            <p>O App da Bíblia é completamente<br> gratuito, sem anúncios e compras no<br> Aplicativo. Já foi instalado em mais de<br> meio bilhão de dispositivos!</p>
+            <a href="https://play.google.com/store/apps/details?id=br.biblia&hl=pt" target="_blank">Baixe o App da Bíblia Gratuito</a>
+        </div>
+    </section>
 
-        <section class="reading-plans">
-            <h2>Planos de Leitura e Devocionais Gratuitos</h2>
-            <div class="plans-grid">
-                <!-- Repetir este bloco para cada plano -->
-                <div class="plan">
-                    <img src="plan-image-1.png" alt="Fortalecendo Seu Casamento">
-                    <h3>Fortalecendo Seu Casamento</h3>
-                    <p>10 Dias • <a href="#">Iniciar o plano</a></p>
-                </div>
-                <!-- Repetir até aqui -->
-            </div>
-            <a href="#" class="view-all">Pesquisar todos os Planos</a>
-        </section>
-    </main>
+    <section class="verse-of-the-day">
+        <div class="verse-image">
+            <img src="imagens/versi.jpg" alt="Versículo do Dia">
+        </div>
+        <div class="verse-text">
+            <h3>VERSÍCULO DO DIA</h3>
+            <p>Estejam alertas e fiquem vigiando porque o inimigo de vocês, o Diabo, anda por aí como um leão que ruge, procurando alguém para devorar. <br>1 Pedro 5:8 (NTLH)</p>
+            <button>Inscrever-se</button>
+        </div>
+    </section>
 
+    <section class="plans">
+        <div class="feature-icon1">
+            <img src="imagens/plans.png" alt="Ícone 3">
+            <h4>PLANOS DE LEITURA E DEVOCIONAIS GRATUITOS</h4>
+        <p>Os Planos bíblicos ajudam você a se engajar com a Palavra de Deus diariamente, um pouco de cada vez.</p>
+    </div>
+        
+        <div class="plan">
+            <img src="imagens/720x405.jpeg" alt="Fortalecendo Seu Casamento">
+            <h3>Fortalecendo Seu Casamento</h3>
+            <p>10 Dias |</p>
+            <a href="Links/fort.html" target="_blank">Iniciar o plano</a>
+            
+        </div>
+        <div class="plan">
+            <img src="imagens/720x405(1).jpeg" alt="Tempo De Reconstrução">
+            <h3>Tempo De Reconstrução</h3>
+            <p>5 Dias |</p>
+            <a href="Links/recons.html" target="_blank">Iniciar o plano</a>
+        </div>
+        <div class="plan">
+            <img src="imagens/720x405(2).jpeg" alt="Tempo de Reconstruir">
+            <h3>Tempo de Reconstruir</h3>
+            <p>3 Dias  |</p>
+            <a href="Links/cons.html" target="_blank">Iniciar o plano</a>
+        </div>
+        <div class="plan">
+            <img src="imagens/720x405(3).jpeg" alt="Equilíbrio Emocional">
+            <h3>Equilíbrio Emocional</h3>
+            <p>10 Dias |</p>
+            <a href="Links/Equil.html" target="_blank">Iniciar o plano</a>
+        </div>
+        <div class="plan">
+            <img src="imagens/720x405(4).jpeg" alt="Dicas Para Uma Boa Convivência">
+            <h3>Dicas Para Uma Boa Convivência</h3>
+            <p>6 Dias |</p>
+            <a href="Links/Dicas.html" target="_blank">Iniciar o plano</a>
+        </div>
+        <div class="plan">
+            <img src="imagens/720x405(5).jpeg" alt="A Cruz: Antes E Depois">
+            <h3>A Cruz: Antes E Depois</h3>
+            <p>6 Dias |</p>
+            <a href="Links/Cruz.html" target="_blank">Iniciar o plano</a>
+        </div>
+    </section>
+    
     <footer>
-        <!-- Conteúdo do rodapé -->
+        <div class="footer-content1">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <h1>SuaVersao</h1>
+                    <h1>Incentivando e desafiando<br> você a buscar intimidade<br> com Deus diariamente.</h1>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-column">
+                        <h2>MINISTÉRIO</h2>
+                        <ul>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Seja Voluntário</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#"></a>Imprensa</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h2>LINKS ÚTEIS</h2>
+                        <ul>
+                            <li><a href="#">Ajuda</a></li>
+                            <li><a href="#">Doar</a></li>
+                            <li><a href="#">Versões da Bíblia</a></li>
+                            <li><a href="#">Bíblias em Áudio</a></li>
+                            <li><a href="#">Idiomas da Bíblia</a></li>
+                            <li><a href="#">Versículo do Dia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+            <hr>
+            
+            <div class="footer-bottom1">
+                <div class="footer-left">
+                    <p>UM MINISTÉRIO DIGITAL DA</p>
+                    <p>Portugues (PT) | ©2024 Life.Church / SuaVersão</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#"><img src="imagens/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="#"><img src="imagens/icons8-twitter-50.png" alt="Twitter"></a>
+                    <a href="#"><img src="imagens/icons8-youtube-50.png" alt="YouTube"></a>
+                    <a href="#"><img src="imagens/icons8-instagram-50.png" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-privacy">
+                <a href="#">Política de Privacidade</a>
+                <span>|</span>
+                <a href="#">Termos</a>
+                <span>|</span>
+                <a href="#">Programa de Divulgação de Vulnerabilidades</a>
+            </div>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

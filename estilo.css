@@ -6,12 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.6;
 }
 
 header {
-    background: #f8f8f8;
+    background: #fff;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -82,6 +82,32 @@ nav {
     cursor: pointer;
 }
 
+
+
+.nav-links li a:hover{
+    border-radius: 20px;
+    background: #e5e7eb;
+    padding: 19x;
+    width: 180px;
+    height: 40px;
+   
+}
+
+.user-actions #Bible:hover{
+    border-radius: 20px;
+    background: #e5e7eb;
+    width: auto;
+    height: 40px;
+   
+}
+.user-actions a:hover{
+    border-radius: 20px;
+    background: #e5e7eb;
+    width: auto;
+    height: 40px;
+   
+}
+
 .intro {
     text-align: center;
     padding: 50px 20px;
@@ -97,115 +123,308 @@ nav {
     margin-bottom: 40px;
 }
 
-.qr-code img {
-    max-width: 200px;
-    margin-bottom: 20px;
+.bible-download-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.app-links img {
-    width: 150px;
-    margin: 0 10px;
+.bible-download-section h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bible-download-section p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.qr-code-container {
+    margin: 20px 0;
+}
+
+.qr-code-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.store-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.store-links a img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.feature {
+    max-width: 30%;
+}
+
+.feature-icon img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.feature h5 {
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+.feature p {
+    font-size: 0.8em;
+    color: black;
+}
+
+.feature a {
+    display: block;
+    margin-top: 10px;
+    color: #1e6fff;
+    text-decoration: none;
+}
+
+.feature a:hover {
+    cursor: pointer;;
 }
 
 .verse-of-the-day {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
-    background: #f8f8f8;
+    padding: 20px;
+    background-image: url('imagens/blurred-mountains.jpeg'); /* Substitua pelo URL da imagem desejada */
+    background-size: cover; /* Para cobrir todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem */
+    border: 1px solid black; /* Adiciona uma borda azul */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    margin: 20px; /* Adiciona um espaço ao redor da seção */
+    color: black; /* Altera a cor do texto para branco */
+    
 }
 
 .verse-image img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */  
+    padding: 5px; /* Espaçamento interno */
 }
+
+
 
 .verse-text {
-    max-width: 600px;
-    margin-left: 20px;
+    flex: 2;
+    padding: 20px;
 }
 
-.verse-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.verse-text h3 {
+    font-size: 1.2em;
 }
 
 .verse-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1em;
+    color: black; /* Altera a cor do texto para branco */
 }
 
 .verse-text button {
+    margin-top: 10px;
     padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border: none;
+    background-color: lightgray;
+    border-radius: 8px solid lightgray;
+    color: black;
     cursor: pointer;
-    border-radius: 5px;
+
 }
 
-.reading-plans {
-    text-align: center;
-    padding: 50px 20px;
+.verse-text button:hover {
+    background-color: lightgrey;
 }
 
-.reading-plans h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
+.plans {
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-.plans-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
+
 
 .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
     text-align: center;
 }
 
 .plan img {
-    max-width: 100%;
-    height: auto;
+    max-width: 55%;
 }
 
+.feature-icon1{
+    display: block;
+    text-align: center;
+}
+
+.feature-icon1 img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.feature-icon1 h4, p{
+    margin-top:  5px;
+    margin-bottom: 20px;
+}
+
+
+
 .plan h3 {
-    font-size: 20px;
+    font-size: 0.9em;
     margin: 10px 0;
 }
 
-.plan p {
-    font-size: 16px;
+.plan p, a {
+    display: inline;
+    font-size: 1em;
+    color: #666;
+    padding: 10px;
+    text-decoration: none;
+    
 }
 
-.view-all {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
+.plan a {
+    color: #1e6fff;
 }
+
+
+.plan a:hover {
+    text-decoration: underline;
+}
+
+
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #e5e7eb;
+    color: #333;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
 }
 
+.footer-content1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-intro {
+    margin-bottom: 20px;
+}
+
+.footer-columns {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.footer-top h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-content{
+    padding: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    margin-left: 490px;
+}
+
+.footer-column h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #555;
+    margin: 20px 0;
+}
+
+.footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    margin-bottom: 5px;
+}
+
+.footer-right a {
+    margin-left: 10px;
+}
+
+.footer-right img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-privacy {
+    margin-top: 20px;
+}
+
+.footer-privacy a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-privacy span {
+    margin: 0 10px;
+    color: #333;
+}
 
 /* Responsividade */
 @media (max-width: 780px) {
     nav {
         flex-direction: column;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
     }
 
     .nav-links.show {
@@ -217,21 +436,112 @@ footer {
         margin-top: 10px;
     }
 
-    .intro, .verse-of-the-day, .reading-plans {
+    .intro, .qr-code, .use-anywhere, .reading-plans {
         text-align: left;
         padding: 20px;
     }
 
-    .verse-of-the-day {
+    .qr-code {
         flex-direction: column;
     }
 
-    .verse-text {
-        margin-left: 0;
-        margin-top: 20px;
+    .qr-code img {
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .plans-grid {
         grid-template-columns: 1fr;
     }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-section, .verse-of-the-day {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature, .plan {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .plan {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .bible-download-section {
+        padding: 15px;
+    }
+
+    .bible-download-section h1 {
+        font-size: 1.2em;
+    }
+
+    .qr-code-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .store-links a img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 885px) {
+    .footer-bottom {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .footer-column {
+        flex: 1;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+   
 }
